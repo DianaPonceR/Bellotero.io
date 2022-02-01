@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Home from "./pages/Home";
+import App from "./routes/App";
 
 ReactDOM.render(
-  <Home />,
+  <App />,
   document.getElementById('app')
 );
 
