@@ -1,10 +1,17 @@
 import React from 'react';
+import Menu from "../components/Menu";
+import ContentTestimonial from "../containers/ContentTestimonial";
+import ContentConfigurator from "../containers/ContentConfigurator";
+
 
 const Home = () => {
     return (
         <>
-            <h1>Hallo Welt!</h1>
-            <p>Bellotero app</p>
+            {/*<Menu/>
+            <ContentTestimonial/>*/}
+            <Menu/>
+            <ContentConfigurator/>
+
         </>
     );
 };
