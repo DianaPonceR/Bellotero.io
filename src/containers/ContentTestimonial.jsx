@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "src/styles//layout/content-testimonial.scss";
+import "../styles/layout/content-testimonial.scss";
 
 import TestimonialMainTitle from "../components/testimonial/TestimonialMainTitle";
 import TestimonialPaginationCurrentPage from "../components/testimonial/TestimonialPaginationCurrentPage";

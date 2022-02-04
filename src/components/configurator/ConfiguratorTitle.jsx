@@ -1,5 +1,5 @@
 import React from 'react';
-import "src/styles//components/configurator/configurator-title.scss";
+import "../../styles/components/configurator/configurator-title.scss";
 
 const ConfiguratorTitle = ({ title }) => {
 

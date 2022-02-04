@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "src/styles//components/configurator/configurator-item-title.scss";
+import "../../styles/components/configurator/configurator-item-title.scss";
 
 const ConfiguratorItemTitle = ({ text1, text2 }) => {
     return (

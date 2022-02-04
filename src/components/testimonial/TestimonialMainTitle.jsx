@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import "src/styles//components/testimonial/testimonial-main-title.scss";
+import "../../styles/components/testimonial/testimonial-main-title.scss";
 
 const TestimonialMainTitle = ({ title }) => {
     return (

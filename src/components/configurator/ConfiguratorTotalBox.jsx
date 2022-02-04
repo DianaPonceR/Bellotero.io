@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "src/styles//components/configurator/configurator-total-box.scss";
+import "../../styles/components/configurator/configurator-total-box.scss";
 
 const ConfiguratorTotalBox = ({ value }) => {
     return (
