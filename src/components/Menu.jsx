@@ -18,22 +18,22 @@ const Menu = () => {
                         <nav>
                             <ul>
                                 <li>
-                                    <Link to="/Bellotero.io">Home</Link>
+                                    <Link to="/">Home</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Bellotero.io">Solutions</Link>
+                                    <Link to="/">Solutions</Link>
                                 </li>
                                 <li>
                                     <Link to="/testimonials">Stories</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Bellotero.io">Partners</Link>
+                                    <Link to="/">Partners</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Bellotero.io">About</Link>
+                                    <Link to="/">About</Link>
                                 </li>
                                 <li>
-                                    <Link to="/Bellotero.io">Blog</Link>
+                                    <Link to="/">Blog</Link>
                                 </li>
                             </ul>
                         </nav>
