@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import PropTypes from "prop-types";
-import "@styles/components/configurator/configurator-input-full-time.scss"
+import "src/styles//components/configurator/configurator-input-full-time.scss"
 import ConfiguratorTotalBox from "./ConfiguratorTotalBox";
 import {useDispatch} from "react-redux";
 import {fulltimeAction} from "../../actions/calculator";

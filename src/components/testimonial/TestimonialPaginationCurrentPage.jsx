@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "@styles/components/testimonial/testimonial-pagination-current-page.scss";
+import "src/styles//components/testimonial/testimonial-pagination-current-page.scss";
 
 const TestimonialPaginationCurrentPage = ({ current, total }) => {
 

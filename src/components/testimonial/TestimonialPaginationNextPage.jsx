@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "@styles/components/testimonial/testimonial-pagination-next-page.scss";
+import "src/styles//components/testimonial/testimonial-pagination-next-page.scss";
 
 const TestimonialPaginationNextPage = ({ onNextClick }) => {
     return (

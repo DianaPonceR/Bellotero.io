@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import "@styles/layout/content-configurator.scss";
+import "src/styles//layout/content-configurator.scss";
 import ConfiguratorTitle from "../components/configurator/ConfiguratorTitle";
 import ConfiguratorText from "../components/configurator/ConfiguratorText";
 import ConfiguratorItemTitle from "../components/configurator/ConfiguratorItemTitle";

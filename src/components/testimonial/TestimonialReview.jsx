@@ -1,5 +1,5 @@
 import React from 'react';
-import "@styles/components/testimonial/testimonial-review.scss";
+import "src/styles//components/testimonial/testimonial-review.scss";
 
 const TestimonialReview = ({name, position, comment, isActive}) => {
     return (

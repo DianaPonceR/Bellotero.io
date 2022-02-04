@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import "@styles/components/testimonial/testimonial-author.scss";
+import "src/styles//components/testimonial/testimonial-author.scss";
 import ConfiguratorItemTitle from "../configurator/ConfiguratorItemTitle";
 
 const TestimonialAuthor = ({name, position, comment}) => {

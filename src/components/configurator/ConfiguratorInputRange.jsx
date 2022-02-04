@@ -1,5 +1,5 @@
 import React from 'react';
-import "@styles/components/configurator/configurator-input-range.scss";
+import "src/styles//components/configurator/configurator-input-range.scss";
 import PropTypes from "prop-types";
 import ConfiguratorTotalBox from "./ConfiguratorTotalBox";
 import ConfiguratorInputMonthly from "./ConfiguratorInputMonthly";

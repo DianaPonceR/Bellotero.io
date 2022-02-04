@@ -1,6 +1,6 @@
 import React from 'react';
 
-import "@styles/components/testimonial/testimonial-text.scss";
+import "src/styles//components/testimonial/testimonial-text.scss";
 
 const TestimonialText = ({comment}) => {
     return (
