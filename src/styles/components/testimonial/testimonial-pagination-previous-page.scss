@@ -1,0 +1,47 @@
+@use "../../vars";
+
+.previous-page {
+  width: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.previous-page:hover {
+  cursor: pointer;
+}
+
+.previous-page:active {
+  transform: scale(1.2);
+}
+
+.arrow-container {
+  position: relative;
+}
+
+.dash {
+  width: 25px;
+  height: 1.5px;
+  background-color: vars.$white;
+}
+
+.arrow-up-previous {
+  width: 15px;
+  height: 1.5px;
+  background-color: vars.$white;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -5px;
+  left: -4px;
+}
+
+.arrow-down-previous {
+  width: 15px;
+  height: 1.5px;
+  background-color: vars.$white;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: 5px;
+  left: -4px;
+}

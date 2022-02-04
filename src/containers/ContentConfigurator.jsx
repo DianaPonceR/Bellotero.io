@@ -13,7 +13,7 @@ import {useSelector} from "react-redux";
 const ContentConfigurator = () => {
 
     const state = useSelector(state => state)
-    const {ingredient_spending, fulltime_employees} = state.calculator
+    const {ingredient_spending, fulltime_employees, cost_food_savings} = state.calculator
 
     const [calculator, setCalculator] = useState(
         {
@@ -41,31 +41,48 @@ const ContentConfigurator = () => {
                     <div className="config-container input-controls">
                         <div className="item">
                             <ConfiguratorItemTitle text1="Monthly" text2="ingredient spending"/>
-                            <ConfiguratorInputMonthly ingredientInputValue={Number(ingredient_spending)} />
+                            <ConfiguratorInputMonthly
+                                ingredientInputValue={Number(ingredient_spending)}
+                                fulltimeInputValue={Number(fulltime_employees)}
+                            />
                             <ConfiguratorInputRange
                                 idRange="ingredient_range"
-                                inputValue={Number(ingredient_spending)}
+                                ingredientInputValue={Number(ingredient_spending)}
+                                fulltimeInputValue={Number(fulltime_employees)}
                                 min={0}
                                 max={100}
                             />
                         </div>
                         <div className="item">
                             <ConfiguratorItemTitle text1="Full-time employees that" text2="process invoices spending" />
-                            <ConfiguratorInputFullTime value={Number(fulltime_employees)} />
+                            <ConfiguratorInputFullTime
+                                ingredientInputValue={Number(ingredient_spending)}
+                                fulltimeInputValue={Number(fulltime_employees)} />
                             <ConfiguratorInputRange
                                 idRange="fulltime_range"
-                                inputValue={Number(fulltime_employees)}
+                                ingredientInputValue={Number(ingredient_spending)}
+                                fulltimeInputValue={Number(fulltime_employees)}
                                 min={0}
-                                max={23.78}
+                                max={10}
                             />
                         </div>
                         <div className="item">
                             <div className="total-amount-wrapper">
                                 <div className="total-amount-container">
-                                    <ConfiguratorTotalBox value={Number(fulltime_employees)} />
+                                    <ConfiguratorTotalBox
+                                        idTotalBox='estimated_cost_food_savings'
+                                        description='Estimated cost food savings'
+                                        valueIngredientInput={Number(ingredient_spending)}
+                                        costFoodSavings={Number(cost_food_savings)}
+                                    />
                                 </div>
                                 <div className="total-amount-container">
-                                    <ConfiguratorTotalBox value={Number(ingredient_spending)}/>
+                                    <ConfiguratorTotalBox
+                                        idTotalBox='your_estimated_annual_savings'
+                                        description='Your estimated annual savings'
+                                        valueIngredientInput={Number(ingredient_spending)}
+                                        costFoodSavings={Number(cost_food_savings)}
+                                    />
                                 </div>
                             </div>
                         </div>

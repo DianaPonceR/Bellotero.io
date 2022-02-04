@@ -1,0 +1,16 @@
+@use "../../clamp";
+@use "../../vars";
+
+.testimonial-main-title {
+  @include clamp.clamp('width', 250px, 50%, 389px);
+  text-align: center;
+  padding: 8px 4px;
+  background-color: vars.$cobalt-blue;
+  color: white;
+  font-size: 36px;
+  font-weight: vars.$weight-900;
+
+  h1 {
+    @include clamp.clamp('font-size', 20px, 2vw, 36px);
+  }
+}

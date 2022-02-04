@@ -1,0 +1,20 @@
+@use "../../vars";
+
+.item-title {
+  flex: 1 1 130px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  p {
+    font-size: 0.875rem;
+    font-weight: vars.$weight-bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: vars.$black;
+    width: 14.87rem;
+  }
+}

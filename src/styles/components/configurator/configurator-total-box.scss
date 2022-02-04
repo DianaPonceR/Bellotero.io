@@ -1,0 +1,49 @@
+@use "../../clamp";
+@use "../../vars";
+
+.total-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .total {
+    display: flex;
+    align-items: baseline;
+
+
+    .coin-total-amount {
+      font-size: 36px;
+      font-weight: vars.$weight-500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.11;
+      letter-spacing: 0.77px;
+      color: vars.$cobalt-blue;
+      margin-right: 8px;
+    }
+
+    .total-amount {
+      font-family: Roboto;
+      @include clamp.clamp('font-size', 55px, 8vw, 72px);
+      font-weight: vars.$weight-500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1;
+      letter-spacing: 1px;
+      color: vars.$cobalt-blue;
+    }
+
+
+  }
+
+  .text-total-amount {
+    font-size: 14px;
+    font-weight: vars.$weight-bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: vars.$black;
+  }
+
+}
