@@ -1,8 +1,8 @@
 import React from 'react';
 
-import "@styles/layout/general.scss";
-import "@styles/components/menu.scss";
-import logo from "@logos/bellotero.png";
+import "../styles/layout/general.scss";
+import "../styles/components/menu.scss";
+import logo from "../assets/logos/bellotero.png";
 import {Link, Outlet} from "react-router-dom";
 
 const Menu = () => {

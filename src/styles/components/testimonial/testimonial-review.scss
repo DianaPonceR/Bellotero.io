@@ -1,0 +1,65 @@
+@use "../../clamp";
+@use "../../vars";
+
+.testimonial-author {
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 190px;
+  flex: 1 1 160px;
+
+  .author-name {
+    color: vars.$black;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: vars.$weight-bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+  }
+
+  .author-position {
+    color: vars.$greyish;
+    font-size: 14px;
+    font-weight: vars.$weight-normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
+
+.testimonial-author.active {
+  display: flex;
+  animation: show 1.5s;
+}
+
+.testimonial-text {
+  max-width: 565px;
+
+  display: none;
+
+  p {
+    @include clamp.clamp('font-size', 18px, 2vw, 24px);
+    font-weight: vars.$weight-bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: vars.$black;
+    margin-top: 0;
+  }
+}
+
+.testimonial-text.active {
+  display: block;
+  animation: show 1.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+@use "../../vars";
+
+.config-text {
+  color: vars.$p-black;
+  font-size: 1rem;
+  width: 21.87rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+}

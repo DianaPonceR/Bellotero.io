@@ -1,5 +1,5 @@
 import React from 'react';
-import "@styles/components/configurator/configurator-text.scss";
+import "../../styles/components/configurator/configurator-text.scss";
 
 const ConfiguratorText = ({ description }) => {
     return (

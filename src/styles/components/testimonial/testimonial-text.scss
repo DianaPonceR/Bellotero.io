@@ -1,0 +1,17 @@
+@use "../../clamp";
+@use "../../vars";
+
+.testimonial-text {
+  max-width: 565px;
+
+  p {
+    @include clamp.clamp('font-size', 18px, 2vw, 24px);
+    font-weight: vars.$weight-bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: vars.$black;
+    margin-top: 0;
+  }
+}

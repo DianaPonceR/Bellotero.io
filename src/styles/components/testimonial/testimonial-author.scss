@@ -1,0 +1,29 @@
+@use "../../clamp";
+@use "../../vars";
+
+.testimonial-author {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  min-height: 190px;
+  flex: 1 1 160px;
+
+  .author-name {
+    color: vars.$black;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: vars.$weight-bold;
+    line-height: 1.5;
+    letter-spacing: normal;
+  }
+
+  .author-position {
+    color: vars.$greyish;
+    font-size: 14px;
+    font-weight: vars.$weight-normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}

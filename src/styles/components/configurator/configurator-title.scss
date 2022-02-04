@@ -1,0 +1,12 @@
+@use "../../vars";
+
+.main-title {
+  font-size: 2.25rem;
+  color: vars.$white;
+
+  .span-title {
+    background: vars.$cobalt-blue;
+    display: inline-block;
+    padding: 8px 4px;
+  }
+}

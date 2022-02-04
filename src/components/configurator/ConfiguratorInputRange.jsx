@@ -1,12 +1,12 @@
 import React from 'react';
-import "@styles/components/configurator/configurator-input-range.scss";
+import "../../styles/components/configurator/configurator-input-range.scss";
 import PropTypes from "prop-types";
 import ConfiguratorTotalBox from "./ConfiguratorTotalBox";
 import ConfiguratorInputMonthly from "./ConfiguratorInputMonthly";
 import {useDispatch} from "react-redux";
 import {fulltimeAction, ingredientAction} from "../../actions/calculator";
 
-const ConfiguratorInputRange = ({ idRange, inputValue, min, max }) => {
+const ConfiguratorInputRange = ({ idRange, ingredientInputValue, fulltimeInputValue, min, max }) => {
 
     const dispatch = useDispatch()
 
@@ -15,10 +15,10 @@ const ConfiguratorInputRange = ({ idRange, inputValue, min, max }) => {
 
         switch (idRange) {
             case 'ingredient_range':
-                dispatch(ingredientAction(value))
+                dispatch(ingredientAction(value, fulltimeInputValue))
                 break
             case 'fulltime_range':
-                dispatch(fulltimeAction(value))
+                dispatch(fulltimeAction(ingredientInputValue, value))
                 break
             default:
                 return
@@ -30,15 +30,30 @@ const ConfiguratorInputRange = ({ idRange, inputValue, min, max }) => {
     return (
         <>
             <div className="input-range-wrapper">
-                <input
-                    type="range"
-                    className="custom-range"
-                    min={min}
-                    max={max}
-                    step="1"
-                    value={inputValue}
-                    onChange={handleChange}
-                />
+                {
+                    idRange === 'ingredient_range'
+                    ?
+                        <input
+                            type="range"
+                            className="custom-range"
+                            min={min}
+                            max={max}
+                            step="1"
+                            value={ingredientInputValue}
+                            onChange={handleChange}
+                        />
+                    :
+                        <input
+                            type="range"
+                            className="custom-range"
+                            min={min}
+                            max={max}
+                            step="1"
+                            value={fulltimeInputValue}
+                            onChange={handleChange}
+                        />
+                }
+
             </div>
         </>
     );

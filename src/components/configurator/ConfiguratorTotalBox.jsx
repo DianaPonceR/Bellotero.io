@@ -1,17 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "@styles/components/configurator/configurator-total-box.scss";
+import "../../styles/components/configurator/configurator-total-box.scss";
 
-const ConfiguratorTotalBox = ({ value }) => {
+const ConfiguratorTotalBox = ({ idTotalBox, description, valueIngredientInput, costFoodSavings }) => {
+
     return (
         <>
             <div className="total-box">
                 <div className="total">
                     <div className="coin-total-amount">$</div>
-                    <div className="total-amount">{ value }</div>
+                    {
+                        idTotalBox === 'estimated_cost_food_savings'
+                        ? <div className="total-amount">{ costFoodSavings }</div>
+                        : <div className="total-amount">{ valueIngredientInput }</div>
+                    }
+
                 </div>
                 <div className="text-total-amount">
-                    Estimated cost food savings
+                    {description}
                 </div>
             </div>
         </>
@@ -19,11 +25,13 @@ const ConfiguratorTotalBox = ({ value }) => {
 };
 
 ConfiguratorTotalBox.propTypes = {
-    value: PropTypes.number.isRequired
+    valueIngredientInput: PropTypes.number.isRequired,
+    description: PropTypes.string.isRequired
 }
 
 ConfiguratorTotalBox.defaultProps = {
-    value: 0
+    valueIngredientInput: 0,
+    description: ''
 }
 
 export default ConfiguratorTotalBox;
