@@ -5,11 +5,11 @@ import ConfiguratorTotalBox from "./ConfiguratorTotalBox";
 import {useDispatch} from "react-redux";
 import {fulltimeAction} from "../../actions/calculator";
 
-const ConfiguratorInputFullTime = ({ value }) => {
+const ConfiguratorInputFullTime = ({ ingredientInputValue, fulltimeInputValue }) => {
 
     const dispatch = useDispatch()
 
-    const value_entero = Math.floor(value)
+    const [inputValue, setInputValue] = useState(fulltimeInputValue)
 
     const handleChange = (event) => {
         const fulltimeInputChange = event.target.value;
@@ -19,7 +19,9 @@ const ConfiguratorInputFullTime = ({ value }) => {
             return
         }
 
-        dispatch(fulltimeAction(fulltimeInputChange))
+        setInputValue(fulltimeInputChange)
+
+        dispatch(fulltimeAction(ingredientInputValue, fulltimeInputChange))
     }
 
     const handleFocus = (event) => event.target.select()
@@ -30,11 +32,11 @@ const ConfiguratorInputFullTime = ({ value }) => {
                 <input
                     type="number"
                     className="input-full-time"
-                    value={value_entero}
+                    value={fulltimeInputValue}
                     onChange={handleChange}
                     onFocus={handleFocus}
                     min="0"
-                    max="23.78"
+                    max="10"
                 />
             </div>
         </>
@@ -42,11 +44,11 @@ const ConfiguratorInputFullTime = ({ value }) => {
 };
 
 ConfiguratorTotalBox.propTypes = {
-    value: PropTypes.number.isRequired
+    fulltimeInputValue: PropTypes.number.isRequired
 }
 
 ConfiguratorTotalBox.defaultProps = {
-    value: 0
+    fulltimeInputValue: 0
 }
 
 export default ConfiguratorInputFullTime;

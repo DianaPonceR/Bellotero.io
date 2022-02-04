@@ -5,7 +5,7 @@ import {useDispatch} from "react-redux";
 import { ingredientAction} from "../../actions/calculator";
 import ConfiguratorTotalBox from "./ConfiguratorTotalBox";
 
-const ConfiguratorInputMonthly = ({ ingredientInputValue }) => {
+const ConfiguratorInputMonthly = ({ ingredientInputValue, fulltimeInputValue }) => {
 
     const dispatch = useDispatch()
 
@@ -28,7 +28,7 @@ const ConfiguratorInputMonthly = ({ ingredientInputValue }) => {
             setInputValue(value)
         }
 
-        dispatch(ingredientAction(value))
+        dispatch(ingredientAction(value, fulltimeInputValue))
     }
 
     const handleFocus = (event) => event.target.select()
