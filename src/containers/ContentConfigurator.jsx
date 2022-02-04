@@ -15,8 +15,6 @@ const ContentConfigurator = () => {
     const state = useSelector(state => state)
     const {ingredient_spending, fulltime_employees} = state.calculator
 
-    /*const fulltime_employees_entero = Math.floor(fulltime_employees)*/
-
     const [calculator, setCalculator] = useState(
         {
             title: '',
