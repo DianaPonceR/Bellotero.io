@@ -1,27 +1,28 @@
 # Bellotero.io app
 
-Este proyecto está desarrollado con 
+This project was developed with: 
 
 * Node.js v16.13.0 LTS
 * React.js v17.0.2
 
-Este proyecto se encuentra en Netlify, en el siguiente enlace: [https://bellotero-app-exam.netlify.app/](https://bellotero-app-exam.netlify.app/)
+Demo: [https://bellotero-app-exam.netlify.app/](https://bellotero-app-exam.netlify.app/)
 
-# PROBAR EL PROYECTO - MODO DESARROLLO
+# RUNNING THE PROJECT
 
-1. Clonar este repo [https://github.com/DianaPonceR/Bellotero.io](https://github.com/DianaPonceR/Bellotero.io)
-2. Colocarse en la rama __main__
-3. Ejecutar el siguiente comando:
+1. Clone this repo [https://github.com/DianaPonceR/Bellotero.io](https://github.com/DianaPonceR/Bellotero.io)
+2. Make sure you are in the __main__ branch
+3. Run the following command:
     
       ```bash
       npm run start
       ```
-4. El proyecto estará disponible en [http://localhost:3006](http://localhost:3006)
+4. You can see the project is running on [http://localhost:3006](http://localhost:3006)
 
-# CREAR EL BUILD DEL PROYECTO
+# CREATE BUILD
 
-* Para crear la carpeta distribuible del proyecto, ejecutar el siguiente comando:
+* Run the folowing command:
 
     ```bash
     npm run build
     ```
+* You can see the __dist__ directory on the root of this project
