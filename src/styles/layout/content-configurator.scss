@@ -1,0 +1,60 @@
+@use "../clamp";
+
+.content-wrapper {
+  display: flex;
+  justify-content: center;
+  min-width: 350px;
+  max-width: 100vw;
+  margin-top: 120px;
+  @include clamp.clamp('padding-left', 5px, 4%, 172px);
+  @include clamp.clamp('padding-right', 5px, 4%, 172px);
+
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1440px;
+
+    .config-container {
+      flex: 1 1 24.375rem;
+      height: 25rem;
+
+      .item > div {
+        margin-bottom: 1.375rem;
+      }
+
+      .item {
+        min-height: 7rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .total-amount-wrapper {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+
+
+          .total-amount-container {
+            display: flex;
+          }
+        }
+      }
+
+      .item > div {
+        margin-bottom: 1.375rem;
+      }
+    }
+
+    .config-container h1:nth-child(1) {
+      margin-bottom: 0.25rem;
+    }
+
+    .config-container h1:nth-child(2) {
+      margin-bottom: 2rem;
+      margin-top: 0;
+    }
+
+    .input-controls {
+      flex: 1 2 33.43rem;
+    }
+  }
+}
