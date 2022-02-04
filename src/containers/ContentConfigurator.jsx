@@ -42,12 +42,22 @@ const ContentConfigurator = () => {
                         <div className="item">
                             <ConfiguratorItemTitle text1="Monthly" text2="ingredient spending"/>
                             <ConfiguratorInputMonthly ingredientInputValue={Number(ingredient_spending)} />
-                            <ConfiguratorInputRange />
+                            <ConfiguratorInputRange
+                                idRange="ingredient_range"
+                                inputValue={Number(ingredient_spending)}
+                                min={0}
+                                max={100}
+                            />
                         </div>
                         <div className="item">
                             <ConfiguratorItemTitle text1="Full-time employees that" text2="process invoices spending" />
                             <ConfiguratorInputFullTime value={Number(fulltime_employees)} />
-                            <ConfiguratorInputRange />
+                            <ConfiguratorInputRange
+                                idRange="fulltime_range"
+                                inputValue={Number(fulltime_employees)}
+                                min={0}
+                                max={23.78}
+                            />
                         </div>
                         <div className="item">
                             <div className="total-amount-wrapper">
