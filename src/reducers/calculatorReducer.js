@@ -9,8 +9,6 @@ const factorIngredient = ((8.611 * 100) / 36.211) / 100
 const factorFulltime = ((36.211 * 100) / 8.611) / 100
 
 export const calculatorReducer = (state = initialState, action) => {
-    console.log('CALCULATOR REDUCER')
-    console.log(state)
 
     switch (action.type) {
         case types.ingredient_spending:
